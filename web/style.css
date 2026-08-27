@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 800px;
+    max-width: 90%;
+    background: #1f2937;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.screen {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+    flex-wrap: wrap;
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.puzzle {
+    background: #111827;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#levelNumber {
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+#levelDescription {
+    color: #9ca3af;
+}
+
+#question {
+    white-space: pre-wrap;
+    font-family: Consolas, monospace;
+    line-height: 1.6;
+    background: #374151;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+#message {
+    min-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

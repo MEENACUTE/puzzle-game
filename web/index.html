@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Three Puzzles</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="startScreen" class="screen">
+
+            <h1>THE THREE PUZZLES</h1>
+
+            <p>Solve all 3 puzzles and unlock the treasure.</p>
+
+            <input
+                id="nameInput"
+                type="text"
+                placeholder="Enter your name"
+            >
+
+            <button onclick="startGame()">
+                START GAME
+            </button>
+
+        </div>
+
+
+        <div id="gameScreen" class="screen hidden">
+
+            <div class="header">
+
+                <h1>THE THREE PUZZLES</h1>
+
+                <div class="stats">
+
+                    <span>
+                        Player:
+                        <strong id="playerName"></strong>
+                    </span>
+
+                    <span>
+                        Score:
+                        <strong id="score">0</strong>
+                    </span>
+
+                    <span>
+                        Lives:
+                        <strong id="lives">3</strong>
+                    </span>
+
+                    <span>
+                        Hints:
+                        <strong id="hints">3</strong>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="puzzle">
+
+                <p id="levelNumber"></p>
+
+                <h2 id="levelTitle"></h2>
+
+                <p id="levelDescription"></p>
+
+                <pre id="question"></pre>
+
+
+                <input
+                    id="answerInput"
+                    type="text"
+                    placeholder="Your answer"
+                    onkeydown="handleEnter(event)"
+                >
+
+
+                <div class="buttons">
+
+                    <button onclick="submitAnswer()">
+                        ANSWER
+                    </button>
+
+                    <button onclick="getHint()">
+                        HINT
+                    </button>
+
+                </div>
+
+
+                <p id="message"></p>
+
+            </div>
+
+        </div>
+
+
+        <div id="endScreen" class="screen hidden">
+
+            <h1 id="endTitle"></h1>
+
+            <p id="endMessage"></p>
+
+            <p>
+                Final Score:
+                <strong id="finalScore"></strong>
+            </p>
+
+            <button onclick="location.reload()">
+                PLAY AGAIN
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
